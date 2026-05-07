@@ -1,0 +1,223 @@
+<html>
+
+<head>
+    <link href="css/estilo.css" rel="stylesheet">
+    <title>Quebrada Burguer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/JavaScript">
+        alert('Bem Vindo');
+        function abrirDetalhes(nome,img,desc){
+            url=`pop.produtos.html  ?produto=${encodeURIComponent(nome)}&imagem=${encodeURIComponent(img)}&   descricao=${encodeURIComponent(desc)}`         
+            window.open(url, "_blank", "width=800,height=700")
+        }
+    </script>
+</head>
+<link href="css/estilo.css" rel="stylesheet" />
+<link href="img/iconeqb3.png" rel="icon" type="image/x-con" />
+
+<body>
+    <header>
+        <div class="divHeader">
+            <img src="img/logoqb.png" class="logo" />
+            <nav>
+                <ul>
+                    <li><a href="#sobreNos">Home</a></li>
+                    <li><a href="#lanches">Lanches</a></li>               
+                    <li><a href="./Telas/contato.html">Fale Conosco</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <img src="img/bannerqb3.jpg" class="banner">
+
+    <main id="sobreNos">
+        <h2  class="titulos titulo_sobre_nos">Sobre nós</h2>
+        <section class="sobre_nos">
+            <p class="dataAtual"><script>
+                data = new Date
+                diaSemana = new Array('Domingo','Segunda-Feira','Terça-Feira','Quarta-Feira','Quinta-Feira','Sexta-Feira','Sábado')
+                mes = new Array('Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro')
+                document.write(diaSemana[data.getDay()] + ', ' + data.getDate() + ' de ' + mes[data.getMonth()] + ' de ' + data.getFullYear())
+            </script></p> 
+            <img src="img/logoqb.png" class="img_sobre_nos" />
+            <p>
+                A Quebrada Burguer nasceu da paixão por hambúrguer artesanal e do orgulho das nossas raízes.<br><br>
+                Somos mais do que uma hamburgueria — somos um negócio criado para valorizar a comunidade, fortalecer a
+                cultura urbana e oferecer qualidade de verdade para quem vive e representa a quebrada todos os dias.
+                Acreditamos que comida boa une pessoas. Por isso, cada hambúrguer é preparado com ingredientes
+                selecionados, carne suculenta na chapa e aquele sabor marcante que transforma qualquer momento em
+                experiência.
+                Nosso propósito vai além do lanche: queremos mostrar que da quebrada também nasce empreendedorismo,
+                criatividade e excelência. Aqui tem respeito, tem atitude e tem muito sabor.
+                Mais do que vender hambúrguer, a gente entrega identidade, orgulho e conexão com a nossa comunidade.
+                Quebrada Burguer – O sabor que representa a nossa história.
+            </p>
+            <br>
+        </section>
+        <section class="mapa">
+            <h2 class="titulos titulo_sobre_nos">Nosso estabelecimento</h2>
+            <p>Veja abaixo onde nos encontrar!</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.8653098296263!2d-46.56120982378585!3d-23.64499416467184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4328c992748f%3A0xcea3c3e698444297!2sSENAI%20S%C3%A3o%20Caetano%20do%20Sul!5e0!3m2!1spt-BR!2sbr!4v1772755242835!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+ 
+        <section>
+            <h2 class="titulos titulo_sobre_nos">Os Brabos</h2>            
+            <!-- CATEGORIA -->
+            <section id="produtos" class="nossos_produtos">                   
+                <script>
+                    descricao="Hambúrguer artesanal suculento na chapa"
+                </script>
+                <div class="produto" onClick="abrirDetalhes('Brabo da Quebrada', 'img/braboqb.png', 'descricao' )">
+                    <img src="img/braboqb.png">
+                    <h3>Brabo da Quebrada</h3>
+                    <p>O clássico da casa e orgulho da quebrada. Hambúrguer artesanal suculento na chapa, coberto com
+                        cheddar cremoso, bacon crocante e molho especial da casa, tudo no pão brioche levemente tostado.
+                        Um lanche pesado de sabor, feito pra quem chega com fome de verdade.</p>
+                    <span class="preco">R$ 32,90 </span>
+                    <button class="botao_pedir">Pedir Agora</button>
+                </div>
+
+
+                <div class="produto">
+                    <img src="img/monstromorro.png">
+                    <h3>Monstro do Morro</h3>
+                    <p>Pra quem encara desafio. Dois hambúrgueres artesanais na chapa, cheddar derretido, bacon crocante
+                        e onion rings douradas, finalizados com molho barbecue no pão brioche tostado. Grande, bruto e
+                        cheio de atitude — só os fortes encaram o Monstro do Morro.</p>
+                    <span class="preco">R$ 35,90</span>
+                    <button class="botao_pedir">Pedir Agora</button>
+                </div>
+
+                <div class="produto">
+                    <img src="img/saladaqb.png">
+                    <h3>Salada da Quebrada</h3>
+                    <p>O equilíbrio perfeito entre sabor e leveza. Hambúrguer artesanal na chapa com queijo derretido,
+                        alface crocante, tomate fresco e cebola roxa, finalizado com o molho especial da casa no pão
+                        brioche. Um clássico com o tempero da quebrada.</p>
+                    <span class="preco">R$ 29,90</span>
+                    <button class="botao_pedir">Pedir Agora</button>
+                </div>
+            </section>
+        </section>
+
+        <!-- CATEGORIA -->
+        <section>
+            <h2 class="titulos titulo_sobre_nos">Combos</h2>
+
+            <section class="nossos_produtos">
+                <div class="produto">
+                    <img src="img/comboqb.png">
+                    <h3>Combo Brabo</h3>
+                    <p>O combo mais pesado da casa, perfeito pra quem chega com fome de verdade.</p>
+                    <span class="preco">R$ 42,90</span>
+                    <button class="botao_pedir">Pedir Agora</button>
+                </div>
+
+                <div class="produto">
+                    <img src="img/combomonstro.png">
+                    <h3>Combo Monstro</h3>
+                    <p>O desafio da quebrada: lanche gigante com batata carregada de cheddar e bacon.</p>
+                    <span class="preco">R$ 45,90</span>
+                    <button class="botao_pedir">Pedir Agora</button>
+                </div>
+
+                <div class="produto">
+                    <img src="img/combosalada.png">
+                    <h3>Combo Salada da Quebrada</h3>
+                    <p>Acompanha batata frita dourada e refrigerante gelado pra completar o corre. Simples, saboroso e pesado no sabor.</p>
+                    <span class="preco">R$ 39,90</span>
+                    <button class="botao_pedir">Pedir Agora</button>
+                </div>
+
+            </section>              
+        </section>
+
+        <!-- CATEGORIA -->
+        <section id="lanches">
+            <h2 class="titulos titulo_sobre_nos">Sobremesas</h2>
+
+            <section class="nossos_produtos">
+                <div class="produto">
+                    <img src="img/milkqb.png">
+                    <h3>Milk Shake da Quebrada</h3>
+                    <p>Milk shake cremoso com sorvete, calda de chocolate e chantilly.</p>
+                    <span class="preco">R$ 18,90</span>
+                    <button class="botao_pedir">Pedir Agora</button>
+                </div>
+
+                <div class="produto">
+                    <img src="img/brownie.png">
+                    <h3>Brownie do Morro</h3>
+                    <p>Brownie quentinho de chocolate servido com calda especial.</p>
+                    <span class="preco">R$ 22,90</span>
+                    <button class="botao_pedir">Pedir Agora</button>
+                </div>
+
+                <div class="produto">
+                    <img src="img/cookie.png">
+                    <h3>Cookie Explosão</h3>
+                    <p>Cookie gigante crocante por fora e recheado com chocolate derretido.</p>
+                    <span class="preco">R$ 15,90</span>
+                    <button class="botao_pedir">Pedir Agora</button>
+                </div>
+            </section>     
+             
+            <section class="video">
+                <div >
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/X0BiEasqyBc?si=RsGta8doYVSQ2Hjp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div> 
+            </section>        
+        </section>
+    </main>
+    <footer class="footer" id="footer1">
+
+        <div class="footer_container">
+    
+            <div class="footer_logo">
+                <h2>QUEBRADA BURGUER</h2>
+                <p>O sabor da quebrada direto pra sua casa 🍔🔥</p>
+            </div>
+    
+            <div class="footer_links">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="#">Os Brabos</a></li>
+                    <li><a href="#">Combos</a></li>
+                    <li><a href="#">Sobremesas</a></li>
+                </ul>
+            </div>
+    
+            <div>
+                <h3>Contato</h3>
+                <p>📍 São Paulo - SP</p>
+                <p>📞 (11) 94844-8765</p>
+                <p>📧 contato@quebradaburguer.com</p>
+            </div>
+    
+            <div class="footer_social">
+                <h3>Redes</h3>
+                <a href="https://instagram.com" target="_blank" class="icone">
+                    <i class="fa-brands fa-instagram"></i> Instagram
+                    </a><br>
+                    
+                    <a href="https://wa.me/5511948448765" target="_blank" class="icone">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                    </a>
+            </div>              
+        </div>    
+        <div class="footer_bottom">
+            <p>© 2026 Quebrada Burguer - Todos os direitos reservados</p>
+        </div>          
+    </footer>
+    <a href="https://wa.me/5511948448765?text=Olá%20quero%20fazer%20um%20pedido!" 
+   class="whatsapp-float" 
+   target="_blank">
+   <i class="fa-brands fa-whatsapp"></i>
+</a>
+</body>
+</html>

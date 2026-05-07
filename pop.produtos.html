@@ -1,0 +1,24 @@
+<html>
+    <head>      
+    <title>Quebrada Burguer</title>
+    <link href="../img/iconeqb3.png" rel="icon" type="image/x-con" />
+    </head>
+    <body>
+        <div>
+            <h1 id="nome-produto"></h1>
+            <img id="img-produto" src=" ">
+            <p id="desc-produto"></p>
+
+            <script>
+                function capturaDados(dado){
+                    urlParams = new URLSearchParams(window.location.search)
+                    return urlParams.get(dado);
+                }
+
+                document.getElementById("nome-produto").textContent = capturaDados("produto");
+                document.getElementById("img-produto").src = capturaDados("imagem");
+                document.getElementById("desc-produto").textContent = capturaDados("descricao");
+            </script>
+        </div>
+    </body>
+</html>
